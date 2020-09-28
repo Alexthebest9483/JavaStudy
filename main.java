@@ -10,12 +10,11 @@ public class main
     {
         short d [] = new short [11];
         int k = 0;
-        for (short i = 4; i <= 24; i+=2)
-            if (i % 2 == 1)
-            {
+        for (short i = 24; i >= 4; i-=2)
+        {
                 d[k] = i;
                 k++;
-            }
+        }
         float min = -10;
         float max = 6;
         Random random = new Random();

@@ -28,11 +28,11 @@ public class main
             for (int j = 0; j < 17; ++j)
             {
                 if (d1[i][j] ==  6)
-                    d1[i][j] = Math.pow((4*(2/3+Math.sin(Math.pow(x[j],1/3)))),3);
+                    d1[i][j] = Math.pow((4.0*(2.0/3.0+Math.sin(Math.pow(x[j],1.0/3.0)))),3.0);
                 else if (d[i] == 8 || d[i] == 10 || d[i] == 14 || d[i] == 20 || d[i] == 24)
-                    d1[i][j] = 3/(Math.cos(Math.sin(x[j])));
+                    d1[i][j] = 3.0/(Math.cos(Math.sin(x[j])));
                 else 
-                    d1[i][j] = 0.5 * (0.25 + Math.sin(x[j])*(Math.pow(x[j], 3)-4));
+                    d1[i][j] = 0.5 * (0.25 + Math.sin(x[j])*(Math.pow(x[j], 3.0)-4.0));
                 System.out.printf ("%.2f %n", d1[i][j]);
             }
     } 
